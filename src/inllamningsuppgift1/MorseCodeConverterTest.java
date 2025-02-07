@@ -31,6 +31,6 @@ public class MorseCodeConverterTest {
 
     @Test
     public void testUnknownCharacterHandling() {
-        assertEquals("", MorseCodeConverter.toMorse("#"));
+        assertEquals("A", MorseCodeConverter.toMorse("Ä"));
     }
 }
