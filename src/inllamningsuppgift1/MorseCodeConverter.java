@@ -2,7 +2,7 @@ package inllamningsuppgift1;
 
 import java.util.HashMap;
 import java.util.Map;
-//MorseCodeConverter: Logikklassen som hanterar omvandling mellan engelska och morsekod.
+//MorseCodeConverter: Logikklassen som hanterar omvandling mellan engelska och morsekod.och 2 felhanteringar
 
 public class MorseCodeConverter {
     private static final Map<Character, String> ENGLISH_TO_MORSE = new HashMap<>();
@@ -29,6 +29,11 @@ public class MorseCodeConverter {
             MORSE_TO_ENGLISH.put(morse, letter);
         }
     }
+//två felhanteringar:
+//
+//Hantera tom eller null inmatning – Kastar ett IllegalArgumentException om input är tom eller null.
+//Hantera ogiltiga tecken – Kastar ett IllegalArgumentException om en användare försöker konvertera
+// en bokstav eller symbol som inte stöds.
 
     public static String toMorse(String text) {
         if (text == null || text.trim().isEmpty()) {
