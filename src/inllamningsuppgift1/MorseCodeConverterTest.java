@@ -26,7 +26,7 @@ public class MorseCodeConverterTest {
 
     @Test
     public void testLowerCaseHandling() {
-        assertEquals("HELLO", MorseCodeConverter.toMorse("hello"));
+        assertEquals(".... . .-.. .-.. ---", MorseCodeConverter.toMorse("hello"));
     }
 
     @Test
