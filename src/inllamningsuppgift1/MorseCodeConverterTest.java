@@ -30,7 +30,7 @@ public class MorseCodeConverterTest {
     }
 
     @Test
-    public void testUnknownCharacterHandling() {
-        assertEquals("A", MorseCodeConverter.toMorse("Ä"));
+    public void testLowerandhighCaseHandling() {
+        assertEquals(".... . .-.. .-.. ---", MorseCodeConverter.toMorse("heLLO"));
     }
 }
